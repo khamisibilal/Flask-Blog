@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Puppy Adoption Page</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet"  href="../static/css/font-awesome/font-awesome.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" href="{{ url_for('index') }}">Home</a>
+            <a class="nav-item nav-link" href="{{ url_for('puppies.add_pup') }}">Add pup</a>
+            <a class="nav-item nav-link" href="{{ url_for('puppies.list_pup') }}">List of pups</a>
+            <a class="nav-item nav-link" href="{{ url_for('puppies.delete_pup') }}">Delete pup</a>
+            <a class="nav-item nav-link" href="{{ url_for('owners.add') }}">Add owner</a>
+        </div>
+    </nav>
+
+    {% block content %}
+
+
+
+
+    {% endblock %}
+
+    <script src="../static/js/jquery-3.4.1.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+</body>
+</html>
